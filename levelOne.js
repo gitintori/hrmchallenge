@@ -4,3 +4,4 @@ const processBoxes = (inbox) => inbox
   const outbox = processBoxes(inbox);
 
   console.log("Outbox:", outbox);
+  
