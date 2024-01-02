@@ -25,4 +25,4 @@ for (var i = 0; i < letters.length; i++) {
     }
 }
 
-console.log('Outbox:', outbox.join(''));
+console.log('Outbox:', outbox);
