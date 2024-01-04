@@ -12,4 +12,4 @@ for (var i = 0; i < inbox.length; i++) {
   }
 }
 
-console.log(outbox);
+console.log('Outbox:', outbox);

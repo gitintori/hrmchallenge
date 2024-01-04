@@ -1,0 +1,25 @@
+const inbox = [12, 3, 7, 12, 3];
+const outbox = [];
+
+function primeFactorsWithCount(n) {
+  const factors = [];
+  var divisor = 2;
+
+  while (n > 1) {
+    if (n % divisor === 0) {
+      factors.push(divisor);
+      n /= divisor;
+    } else {
+      divisor++;
+    }
+  }
+
+  return factors;
+}
+
+inbox.forEach(num => {
+  const factors = primeFactorsWithCount(num);
+  outbox.push(factors);
+});
+
+console.log('Outbox:', outbox);
